@@ -1,0 +1,88 @@
+library ieee;
+use ieee.std_logic_1164.ALL;
+use ieee.numeric_std.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity assemble is 
+port
+(	
+	clk  :in std_logic;
+	reset_n: in std_logic;
+	SREG: out std_logic_vector(7 downto 0)
+);
+end entity;
+
+architecture core of assemble is 
+--components
+component ALU is
+	port(
+		clk, reset_n:	in		std_logic							;
+		op1, op2 	:	in		std_logic_vector(7 downto 0)	;
+		op_code		:	in		std_logic_vector(15 downto 0)	;
+		res			:	out	std_logic_vector(15 downto 0)	;
+		SREG			:	out	std_logic_vector(7 downto 0)	
+	);
+end component ALU;
+
+component Controll_Fetch is
+port 
+(
+	clk		: in std_logic 							;
+	rst_n		: in std_logic						   	;
+	mode12K	: in std_logic_vector(1 downto 0)	;
+	k			: in std_logic_vector(11 downto 0)	;
+	pm_addr	:out std_logic_vector(11 downto 0)		
+);
+end component;
+
+component Reg_file is 
+port 
+(
+		clk_i    :  in std_logic							;
+		rst_n_i	:  in std_logic							;
+		wdata_i	:  in std_logic_vector(7 downto 0)	;
+		waddr_i	:  in std_logic_vector(4 downto 0)	;
+		rdata1_o	: out std_logic_vector(7 downto 0)	;
+		rdata2_o	: out std_logic_vector(7 downto 0)	;
+		raddr1_i	:  in std_logic_vector(4 downto 0)	;
+		raddr2_i	:  in std_logic_vector(4 downto 0)	;
+		wenable_i:  in std_logic							;
+		X_o		: out std_logic_vector(15 downto 0) ;
+		Y_o		: out std_logic_vector(15 downto 0) ;
+		Z_o		: out std_logic_vector(15 downto 0) 
+);
+end component;
+
+component control_unit is
+port
+(
+	clk, reset_n		: in std_logic;
+	opcode_i 			: in std_logic_vector(15 downto 0);
+	opcode_o 			: out std_logic_vector(15 downto 0);
+	mode12k				: out std_logic_vector(1 downto 0);
+	k						: out std_logic_vector(11 downto 0);
+	addr_r1, addr_r2	: out std_logic_vector(4 downto 0);
+	addr_w				: out std_logic_vector(4 downto 0);
+	op_k					: out std_logic_vector(7 downto 0);
+	clk_if, clk_dc, clk_ex, clk_st: out std_logic;
+	wr						: out std_logic
+);
+end component;
+
+component progmem is 
+port 
+(
+	pm_addr : in std_logic_vector(11 downto 0) ;
+	pm_data :out std_logic_vector(15 downto 0) 
+);
+end component;
+
+-- wires
+signal mode: std_logic_vector(1 downto 0);
+signal command :std_logic_vector(15 downto 0);
+signal command_to_alu:std_logic_vector(15 downto 0);
+
+begin 
+
+end architecture;

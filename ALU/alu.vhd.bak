@@ -1,0 +1,56 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+
+entity alu is 
+port 
+(
+	op1 		: in std_logic_vector(7 downto 0)	;
+	op2 		: in std_logic_vector(7 downto 0)	;
+	opcode	: in std_logic_vector(15 downto 0)	;
+	flags		: in std_logic_vector(7 downto 0)	;
+	sreg		:out std_logic_vector(7 downto 0)	;
+	res		:out std_logic_vector(15 downto 0) 
+);
+end entity;
+
+architecture alu of core is 
+signal Flags_w : std_logic_vector(7 downto 0) := (others => '0');
+constant C: integer range 0 to 7 := 0; 
+constant Z: integer range 0 to 7 := 1; 
+constant N: integer range 0 to 7 := 2; 
+constant V: integer range 0 to 7 := 3; 
+constant S: integer range 0 to 7 := 4; 
+constant H: integer range 0 to 7 := 5; 
+constant T: integer range 0 to 7 := 6; 
+constant I: integer range 0 to 7 := 7;
+signal result: std_logic_vector(15 downto 0);
+begin 
+sreg <= Flags_w;
+res <= result;
+case(opcode) is 
+	when B"0000_11--_----_----" => 
+		result(8 downto 0) :=  op1 +  op2;
+		flags_w(с) <= result(8);
+		flags_w(n) <= result(7);
+		if(result = X"0000") then 
+			flags_w(z) <= 1;
+		else 
+			flags_w(z) <= 0;
+		end if;
+	when B"0001_11--_----_----" => 
+		result(8 downto 0) :=  op1 +  op2 + flags(c);
+		flags_w(с) <= result(8);
+		flags_w(n) <= result(7);
+		if(result = X"0000") then 
+			flags_w(z) <= 1;
+		else 
+			flags_w(z) <= 0;
+		end if; 
+	when others => 
+		result <= (others => '0');
+		Flags_w <= (others => '0');
+end case;
+end architecture;

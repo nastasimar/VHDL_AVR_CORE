@@ -1,0 +1,17 @@
+module ALU_test;
+logic[7:0] op1, op2, flags, sreg;
+logic[15:0] res, opcode;
+
+alu dut(op1, op2, opcode, flags, sreg, res);
+
+initial begin 
+$monitor("opcode = %b op1 = %d op2 = %d flags = %b sreg = %b res = %d", opcode, op1, op2, flags, sreg, res);
+op1 = 8'd5;
+op2 = 8'd1;
+opcode = 16'h0fff;
+flags = 0;
+#10;
+opcode = 16'h1fff;
+#10 $finish;
+end 
+endmodule: ALU_test

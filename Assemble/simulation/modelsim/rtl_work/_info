@@ -1,0 +1,302 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/79315/Desktop/vhdl_homework/core/Assemble/simulation/modelsim
+Ealu
+Z1 w1671895385
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z7 8C:/Users/79315/Desktop/vhdl_homework/core/ALU/alu.vhd
+Z8 FC:/Users/79315/Desktop/vhdl_homework/core/ALU/alu.vhd
+l0
+L173
+VXYMh9S8UZ8eQDZ;VS3g`o1
+!s100 T=mnFeE3S`PijViIMFhme0
+Z9 OV;C;10.3d;59
+33
+Z10 !s110 1671918798
+!i10b 1
+Z11 !s108 1671918798.586000
+Z12 !s90 -reportprogress|300|-2008|-work|work|C:/Users/79315/Desktop/vhdl_homework/core/ALU/alu.vhd|
+Z13 !s107 C:/Users/79315/Desktop/vhdl_homework/core/ALU/alu.vhd|
+!i113 1
+Z14 o-2008 -work work
+Z15 tExplicit 1
+Artl
+R2
+R3
+R4
+R5
+R6
+DEx4 work 3 alu 0 22 XYMh9S8UZ8eQDZ;VS3g`o1
+l195
+L183
+VnDjT3oW;O=6A^hikWlRGL1
+!s100 ATCYiQ@GV;zMUk_lYb7170
+R9
+33
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+Econtrol_unit
+Z16 w1671895469
+R2
+R3
+R5
+R6
+R0
+Z17 8C:/Users/79315/Desktop/vhdl_homework/core/ControllUnit/control_unit.vhd
+Z18 FC:/Users/79315/Desktop/vhdl_homework/core/ControllUnit/control_unit.vhd
+l0
+L6
+V`fmKESF<cT<OKg:cb3jfH3
+!s100 >I8Z8b[`3ITDORG[NV>Ja2
+R9
+33
+Z19 !s110 1671918797
+!i10b 1
+Z20 !s108 1671918797.121000
+Z21 !s90 -reportprogress|300|-2008|-work|work|C:/Users/79315/Desktop/vhdl_homework/core/ControllUnit/control_unit.vhd|
+Z22 !s107 C:/Users/79315/Desktop/vhdl_homework/core/ControllUnit/control_unit.vhd|
+!i113 1
+R14
+R15
+Acontrol
+R2
+R3
+R5
+R6
+DEx4 work 12 control_unit 0 22 `fmKESF<cT<OKg:cb3jfH3
+l27
+L22
+V]IS`DaMf1cIYQIU<SO9bP0
+!s100 o1;:ZoE:8QS6HCHJcY3lg3
+R9
+33
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R14
+R15
+Econtroll_fetch
+Z23 w1671918403
+R4
+R2
+R3
+R5
+R6
+R0
+Z24 8C:/Users/79315/Desktop/vhdl_homework/core/Stack/Controll_Fetch.vhd
+Z25 FC:/Users/79315/Desktop/vhdl_homework/core/Stack/Controll_Fetch.vhd
+l0
+L7
+V4_h=]3YDmmzH<SDmjaJWd0
+!s100 9<oeGjnJC5iRRLQ5BXIH<1
+R9
+33
+Z26 !s110 1671918792
+!i10b 1
+Z27 !s108 1671918792.562000
+Z28 !s90 -reportprogress|300|-2008|-work|work|C:/Users/79315/Desktop/vhdl_homework/core/Stack/Controll_Fetch.vhd|
+Z29 !s107 C:/Users/79315/Desktop/vhdl_homework/core/Stack/Controll_Fetch.vhd|
+!i113 1
+R14
+R15
+Artl
+R4
+R2
+R3
+R5
+R6
+DEx4 work 14 controll_fetch 0 22 4_h=]3YDmmzH<SDmjaJWd0
+l22
+L18
+ViQc?;<dB[0z6Ab@B]PnRl1
+!s100 nzdnFP=HklJiK^j4PIKUO0
+R9
+33
+R26
+!i10b 1
+R27
+R28
+R29
+!i113 1
+R14
+R15
+Ecore
+Z30 w1671914268
+R2
+R3
+R4
+R5
+R6
+R0
+Z31 8C:/Users/79315/Desktop/vhdl_homework/core/Stack/core.vhd
+Z32 FC:/Users/79315/Desktop/vhdl_homework/core/Stack/core.vhd
+l0
+L7
+Vk@:_>OnRGe`I?NO>DmOk53
+!s100 IEKol<EdJolT2<;la]Kmz2
+R9
+33
+Z33 !s110 1671918800
+!i10b 1
+Z34 !s108 1671918800.164000
+Z35 !s90 -reportprogress|300|-2008|-work|work|C:/Users/79315/Desktop/vhdl_homework/core/Stack/core.vhd|
+Z36 !s107 C:/Users/79315/Desktop/vhdl_homework/core/Stack/core.vhd|
+!i113 1
+R14
+R15
+Acore
+R2
+R3
+R4
+R5
+R6
+DEx4 work 4 core 0 22 k@:_>OnRGe`I?NO>DmOk53
+l100
+L16
+V6l9gh@NofB5T@`GJ6Yl9O0
+!s100 h22m3aAin5JA6:mnBdcZf3
+R9
+33
+R33
+!i10b 1
+R34
+R35
+R36
+!i113 1
+R14
+R15
+vcore_test
+DXx6 sv_std 3 std 0 22 <EOTafDcUY:cQeO^ICn]m3
+!s110 1671918801
+!i10b 1
+!s100 czZWeJb0GacG]?JLUoGI<0
+I@EN7:mjHkf6]>MPT9f3l02
+V`JN@9S9cnhjKRR_L]QIcM3
+!s105 core_test_sv_unit
+S1
+R0
+w1671918676
+8C:/Users/79315/Desktop/vhdl_homework/core/Assemble/core_test.sv
+FC:/Users/79315/Desktop/vhdl_homework/core/Assemble/core_test.sv
+L0 1
+OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1671918801.722000
+!s107 C:/Users/79315/Desktop/vhdl_homework/core/Assemble/core_test.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/79315/Desktop/vhdl_homework/core/Assemble|C:/Users/79315/Desktop/vhdl_homework/core/Assemble/core_test.sv|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+C:/Users/79315/Desktop/vhdl_homework/core/Assemble
+Eprogmem
+Z37 w1671918674
+R4
+R3
+R2
+R5
+R6
+R0
+Z38 8C:/Users/79315/Desktop/vhdl_homework/core/ProgrammMemory/progmem.vhd
+Z39 FC:/Users/79315/Desktop/vhdl_homework/core/ProgrammMemory/progmem.vhd
+l0
+L7
+VnRDcVcG8TKaU@IGVSiHGG1
+!s100 @G`7H]l=8g>lUeJAX9Kb^0
+R9
+33
+Z40 !s110 1671918795
+!i10b 1
+Z41 !s108 1671918795.558000
+Z42 !s90 -reportprogress|300|-2008|-work|work|C:/Users/79315/Desktop/vhdl_homework/core/ProgrammMemory/progmem.vhd|
+Z43 !s107 C:/Users/79315/Desktop/vhdl_homework/core/ProgrammMemory/progmem.vhd|
+!i113 1
+R14
+R15
+Artl
+R4
+R3
+R2
+R5
+R6
+DEx4 work 7 progmem 0 22 nRDcVcG8TKaU@IGVSiHGG1
+l34
+L15
+VcXhn=4TaKOP^F>K_<@4Q91
+!s100 ^<?Kfo>I;4_]DCA@1LjSQ0
+R9
+33
+R40
+!i10b 1
+R41
+R42
+R43
+!i113 1
+R14
+R15
+Ereg_file
+Z44 w1671896253
+R4
+R3
+R2
+R5
+R6
+R0
+Z45 8C:/Users/79315/Desktop/vhdl_homework/core/Regfile/Reg_file.vhd
+Z46 FC:/Users/79315/Desktop/vhdl_homework/core/Regfile/Reg_file.vhd
+l0
+L7
+VX]O?_^G5:H<Di>GVo<chE2
+!s100 UdKYL<gCK_YU4IC4cQaZZ1
+R9
+33
+Z47 !s110 1671918794
+!i10b 1
+Z48 !s108 1671918794.088000
+Z49 !s90 -reportprogress|300|-2008|-work|work|C:/Users/79315/Desktop/vhdl_homework/core/Regfile/Reg_file.vhd|
+Z50 !s107 C:/Users/79315/Desktop/vhdl_homework/core/Regfile/Reg_file.vhd|
+!i113 1
+R14
+R15
+Artl
+R4
+R3
+R2
+R5
+R6
+DEx4 work 8 reg_file 0 22 X]O?_^G5:H<Di>GVo<chE2
+l30
+L25
+VRHZn9?4Ch=6DSdUJ;cEN12
+!s100 mlNTBNkWjSUo]VAnZCIOM1
+R9
+33
+R47
+!i10b 1
+R48
+R49
+R50
+!i113 1
+R14
+R15

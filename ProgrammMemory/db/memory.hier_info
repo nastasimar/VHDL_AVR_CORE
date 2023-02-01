@@ -1,0 +1,31 @@
+|progmem
+pm_addr[0] => PM.RADDR
+pm_addr[1] => PM.RADDR1
+pm_addr[2] => PM.RADDR2
+pm_addr[3] => PM.RADDR3
+pm_addr[4] => ~NO_FANOUT~
+pm_addr[5] => ~NO_FANOUT~
+pm_addr[6] => ~NO_FANOUT~
+pm_addr[7] => ~NO_FANOUT~
+pm_addr[8] => ~NO_FANOUT~
+pm_addr[9] => ~NO_FANOUT~
+pm_addr[10] => ~NO_FANOUT~
+pm_addr[11] => ~NO_FANOUT~
+pm_data[0] <= PM.DATAOUT
+pm_data[1] <= PM.DATAOUT1
+pm_data[2] <= PM.DATAOUT2
+pm_data[3] <= PM.DATAOUT3
+pm_data[4] <= PM.DATAOUT4
+pm_data[5] <= PM.DATAOUT5
+pm_data[6] <= PM.DATAOUT6
+pm_data[7] <= PM.DATAOUT7
+pm_data[8] <= PM.DATAOUT8
+pm_data[9] <= PM.DATAOUT9
+pm_data[10] <= PM.DATAOUT10
+pm_data[11] <= PM.DATAOUT11
+pm_data[12] <= PM.DATAOUT12
+pm_data[13] <= PM.DATAOUT13
+pm_data[14] <= PM.DATAOUT14
+pm_data[15] <= PM.DATAOUT15
+
+
